@@ -1,0 +1,27 @@
+#CALCULATOR_PYTHON_SHWETA SUNILKUMAR
+
+print("\n\t\t\t\t~ CALCULATOR ~")
+print("\n1. Addition (+)\t\t2.Subtraction (-)\t3.Multiplication (*)\n4. Division (/)\t\t5. Remainder (%)\t6. Exit\n ")
+o = int(input("What operation do you want to perform (Please enter the index number (i.e.) 1 for addition):"))
+while(True):
+    while(o > 6):
+        print("\nPlease enter a valid operation. Enter 6 to cancel")
+        print("1. Addition (+)\t\t2.Subtraction (-)\t3.Multiplication (*)\n4. Division (/)\t\t5. Remainder (%)\t6. Exit\n ")
+        o = int(input("What operation do you want to perform (Please enter the index number (i.e.) 1 for addition):"))
+    if(o == 6):
+        break;
+    n1 = int(input("Enter first number: "))
+    n2 = int(input("Enter second number: "))
+    if(o==1):
+        print("\n", n1,"+", n2, " = ", (n1+n2), "\n\n")
+    if(o==2):
+        print("\n",n1,"-", n2, " = ", (n1-n2), "\n\n")
+    if(o==3):
+        print("\n",n1,"x", n2, " = ", (n1*n2), "\n\n")
+    if(o==4):
+        print("\n",n1,"/", n2, " = ", (n1/n2), "\n\n")
+    if(o==5):
+        print("\n",n1,"%", n2, " = ", (n1%n2), "\n\n")
+    print("1. Addition (+)\t\t2.Subtraction (-)\t3.Multiplication (*)\n4. Division (/)\t\t5. Remainder (%)\t6. Exit\n ")
+    o = int(input("What operation do you want to perform (Please enter the index number (i.e.) 1 for addition):"))
+print("\nProgram terminated.\n")
